@@ -1,0 +1,49 @@
+# --- Python -----------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# --- Run artefacts ----------------------------------------------------------
+# Reports and manifests are per-run outputs, never source.
+_import_reports/
+*.log
+manifest*.csv
+import*.csv
+
+# --- Media ------------------------------------------------------------------
+# Guard against committing test photographs by accident.
+*.ARW
+*.arw
+*.JPG
+*.jpg
+*.jpeg
+*.NEF
+*.CR2
+*.CR3
+*.dng
+*.MP4
+*.mp4
+*.MOV
+*.mov
+# Small fixtures for the test suite are an explicit exception.
+!tests/fixtures/**
+
+# --- macOS ------------------------------------------------------------------
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+
+# --- Editors ----------------------------------------------------------------
+.vscode/
+.idea/
+*.swp

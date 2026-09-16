@@ -1,0 +1,5 @@
+# Both dependencies are optional at runtime: the script degrades gracefully
+# without them (mtime fallback for exifread, no progress bars for tqdm).
+# They are listed here because a normal install should have them.
+exifread>=3.0
+tqdm>=4.65
